@@ -1,10 +1,13 @@
 import { defineConfig } from "umi";
-
+const { resolve } = require('path');
 export default defineConfig({
   // routes: [
   //   { path: "/", component: "index" },
   //   { path: "/docs", component: "docs" },
   // ],
+  alias:{
+    utils:resolve(__dirname,"./src/utils")
+  },
   npmClient: 'pnpm',
   plugins: ['@umijs/plugins/dist/antd'],
   antd: {
