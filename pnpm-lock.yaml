@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^5.2.6
   '@ant-design/pro-layout': ^7.17.16
   '@types/react': ^18.0.33
   '@types/react-dom': ^18.0.11
@@ -13,6 +14,7 @@ specifiers:
   umi: ^4.0.88
 
 dependencies:
+  '@ant-design/icons': 5.2.6_ef5jwxihqo6n7gxfmzogljlgcm
   '@ant-design/pro-layout': 7.17.16_v4kbg374ttrw2s5ze4svahg3gq
   antd: 5.11.3_ef5jwxihqo6n7gxfmzogljlgcm
   axios: 1.6.2

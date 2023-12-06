@@ -6,7 +6,9 @@ export default defineConfig({
   //   { path: "/docs", component: "docs" },
   // ],
   alias:{
-    utils:resolve(__dirname,"./src/utils")
+    utils:resolve(__dirname,"./src/utils"),
+    components:resolve(__dirname,"./src/components"),
+    common:resolve(__dirname,"./src/common")
   },
   npmClient: 'pnpm',
   plugins: ['@umijs/plugins/dist/antd'],

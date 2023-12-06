@@ -9,11 +9,10 @@ import { useLocation } from 'react-router-dom';
 export default function Layout({children}) {
   const layoutMap = { BaseLayout,LoginLayout }
   const location  = useLocation();
-  console.log(location)
-  console.log(location.pathname)
-  console.log()
+
+  console.log(Outlet)
   const Container = layoutMap[selectLayout(location.pathname)]
-  console.log(selectLayout)
+
   return (
  <Container>
   <Outlet></Outlet>
