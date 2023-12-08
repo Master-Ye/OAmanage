@@ -6,26 +6,34 @@ specifiers:
   '@types/react': ^18.0.33
   '@types/react-dom': ^18.0.11
   '@umijs/plugins': ^4.0.88
+  '@umijs/use-request': ^1.4.3
   antd: ^5.11.3
   axios: ^1.6.2
+  dva: ^2.4.1
+  qs: ^6.11.2
   react-router: '6'
   react-router-dom: ^6.20.0
   typescript: ^5.0.3
   umi: ^4.0.88
+  umi-request: ^1.4.0
 
 dependencies:
   '@ant-design/icons': 5.2.6_ef5jwxihqo6n7gxfmzogljlgcm
   '@ant-design/pro-layout': 7.17.16_v4kbg374ttrw2s5ze4svahg3gq
+  '@umijs/use-request': 1.4.3_react@18.1.0
   antd: 5.11.3_ef5jwxihqo6n7gxfmzogljlgcm
   axios: 1.6.2
+  dva: 2.4.1_ef5jwxihqo6n7gxfmzogljlgcm
+  qs: 6.11.2
   react-router: 6.20.0_react@18.1.0
   react-router-dom: 6.20.0_ef5jwxihqo6n7gxfmzogljlgcm
   umi: 4.0.88_22boosscmxmxnhhssdlfnr2gta
+  umi-request: 1.4.0
 
 devDependencies:
   '@types/react': 18.2.38
   '@types/react-dom': 18.2.17
-  '@umijs/plugins': 4.0.88_6fu245dswqm7dnkvbqlrs5ymsa
+  '@umijs/plugins': 4.0.88_uxkbzzbd6rpy7zipldgycvtlzm
   typescript: 5.3.2
 
 packages:
@@ -746,6 +754,12 @@ packages:
       '@babel/core': 7.23.3
       '@babel/helper-plugin-utils': 7.22.5
     dev: false
+
+  /@babel/runtime/7.0.0-beta.46:
+    resolution: {integrity: sha512-/3a3USMKk54BEHhDgY8rtxtaQOs4bp4aQwo6SDtdwmrXmgSgEusWuXNX5oIs/nwzmTD9o8wz2EyAjA+uHDMmJA==}
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
 
   /@babel/runtime/7.23.2:
     resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
@@ -2014,14 +2028,12 @@ packages:
 
   /@types/history/4.7.11:
     resolution: {integrity: sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==}
-    dev: true
 
   /@types/history/5.0.0:
     resolution: {integrity: sha512-hy8b7Y1J8OGe6LbAjj3xniQrj3v6lsivCcrmf4TzSgPzLkhIeKgc5IZnT7ReIqmEuodjfO8EYAuoFvIrHi/+jQ==}
     deprecated: This is a stub types definition. history provides its own type definitions, so you do not need this installed.
     dependencies:
       history: 5.3.0
-    dev: true
 
   /@types/hoist-non-react-statics/3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
@@ -2040,7 +2052,6 @@ packages:
 
   /@types/isomorphic-fetch/0.0.34:
     resolution: {integrity: sha512-BmJKuPCZCR6pbYYgi5nKFJrPC4pLoBgsi/B1nFN64Ba+hLLGUcKPIh7eVlR2xG763Ap08hgQafq/Wx4RFb0omQ==}
-    dev: true
 
   /@types/istanbul-lib-coverage/2.0.6:
     resolution: {integrity: sha512-2QF/t/auWm0lsy8XtKVPG19v3sSOQlJe/YHZgfjb/KBBHOGSV+J2q/S671rcq9uTBrLAXmZpqJiaQbMT+zNU1w==}
@@ -2095,7 +2106,6 @@ packages:
       '@types/history': 5.0.0
       '@types/react': 18.2.38
       '@types/react-router': 5.1.20
-    dev: true
 
   /@types/react-router-redux/5.0.25:
     resolution: {integrity: sha512-D7gtxg/Assg2T3FWq7iKPGldYbx0QXi3tXww220nT4oLmocsD7IBi66nR6m44Zo1T1rPl4nHO0AveYn/hVeu+w==}
@@ -2104,14 +2114,12 @@ packages:
       '@types/react': 18.2.38
       '@types/react-router': 5.1.20
       redux: 4.2.1
-    dev: true
 
   /@types/react-router/5.1.20:
     resolution: {integrity: sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q==}
     dependencies:
       '@types/history': 4.7.11
       '@types/react': 18.2.38
-    dev: true
 
   /@types/react/18.2.38:
     resolution: {integrity: sha512-cBBXHzuPtQK6wNthuVMV6IjHAFkdl/FOPFIlkd81/Cd1+IqkHu/A+w4g43kaQQoYHik/ruaQBDL72HyCy1vuMw==}
@@ -2558,7 +2566,7 @@ packages:
       tsx: 3.14.0
     dev: false
 
-  /@umijs/plugins/4.0.88_6fu245dswqm7dnkvbqlrs5ymsa:
+  /@umijs/plugins/4.0.88_uxkbzzbd6rpy7zipldgycvtlzm:
     resolution: {integrity: sha512-EN88xSP6r6Q+JkoFlMbf+Bd6b5+Fz5FqT6gtaPR1fXWM6klw8LdCsboXmxGsIJMBMVJlP79SiIEGks5NfbxmaQ==}
     dependencies:
       '@ahooksjs/use-request': 2.8.15_react@18.1.0
@@ -2577,7 +2585,7 @@ packages:
       babel-plugin-styled-components: 2.1.4_c5lk5fqjgxivrumyhq5kobvzlu
       dayjs: 1.11.10
       dva-core: 2.0.4_redux@3.7.2
-      dva-immer: 1.0.1_dva@2.5.0-beta.2
+      dva-immer: 1.0.1_dva@2.4.1
       dva-loading: 3.0.24_dva-core@2.0.4
       event-emitter: 0.3.5
       fast-deep-equal: 3.1.3
@@ -2758,6 +2766,17 @@ packages:
       react: '*'
     dependencies:
       react: 18.1.0
+
+  /@umijs/use-request/1.4.3_react@18.1.0:
+    resolution: {integrity: sha512-aH4GCdRnMCaaciygdN0KtCDQdBBh1KyiNUAgYDPX8Y4brmbymEpJViX1FU4isOTbV34WlbkWTiBpR9HIi2ciNQ==}
+    peerDependencies:
+      react: ^16.8.6
+    dependencies:
+      lodash.debounce: 4.0.8
+      lodash.throttle: 4.1.1
+      react: 18.1.0
+      umi-request: 1.4.0
+    dev: false
 
   /@umijs/utils/4.0.88:
     resolution: {integrity: sha512-b7rW75hQ18+1Q3rt6cqOIed6hftmsExUsfJaCjYCIqFL3DRn+D8Uwb0EEsNlxgLnWUgwGC2KrIYYMvc2Q2XfWA==}
@@ -3709,6 +3728,11 @@ packages:
     requiresBuild: true
     dev: false
 
+  /core-js/2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+    requiresBuild: true
+
   /core-js/3.28.0:
     resolution: {integrity: sha512-GiZn9D4Z/rSYvTeg1ljAIsEqFm0LaN9gVtwDCrKL80zHtS31p9BAjmTxVqTQDMpwlMolJZOFntUG2uwyj7DAqw==}
     requiresBuild: true
@@ -4089,7 +4113,6 @@ packages:
 
   /dom-walk/0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
-    dev: true
 
   /domain-browser/1.2.0:
     resolution: {integrity: sha512-jnjyiM6eRyZl2H+W8Q/zLMA481hzi0eszAaBUzIVnmYVDBbnLxVNnfu1HgEBvCbL+71FrxMl3E6lpKH7Ge3OXA==}
@@ -4130,12 +4153,12 @@ packages:
       readable-stream: 3.6.2
       stream-shift: 1.0.1
 
-  /dva-core/1.5.0-beta.2_redux@3.7.2:
-    resolution: {integrity: sha512-xmtr/J63EZXBdVXNBW+QCD7p9CaE8kAo2U1faRyv3PIGcy0G3Y6IBDNtoBB/Cj3nzk/jvX0dv96Hnh1kpSnI7Q==}
+  /dva-core/1.4.0_redux@3.7.2:
+    resolution: {integrity: sha512-g1CnnF80+oGTUv9qZCc5vndkPHwoODiAGzdcGFMbT78+SmrbYgbvO5wyRBGvebmLYyaTJt4tLqvHIP+UYJoxkQ==}
     peerDependencies:
       redux: 3.x
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.0.0-beta.46
       flatten: 1.0.3
       global: 4.4.0
       invariant: 2.2.4
@@ -4143,7 +4166,6 @@ packages:
       redux: 3.7.2
       redux-saga: 0.16.2
       warning: 3.0.0
-    dev: true
 
   /dva-core/2.0.4_redux@3.7.2:
     resolution: {integrity: sha512-Zh39llFyItu9HKXKfCZVf9UFtDTcypdAjGBew1S+wK8BGVzFpm1GPTdd6uIMeg7O6STtCvt2Qv+RwUut1GFynA==}
@@ -4160,13 +4182,13 @@ packages:
       warning: 3.0.0
     dev: true
 
-  /dva-immer/1.0.1_dva@2.5.0-beta.2:
+  /dva-immer/1.0.1_dva@2.4.1:
     resolution: {integrity: sha512-Oe+yFTtu2UMNcMoBLLTa/ms1RjUry38Yf0ClN8LiHbF+gT2QAdLYLk3miu1dDtm3Sxl9nk+DH1edKX0Hy49uQg==}
     peerDependencies:
       dva: ^2.5.0-0
     dependencies:
       '@babel/runtime': 7.23.2
-      dva: 2.5.0-beta.2_ef5jwxihqo6n7gxfmzogljlgcm
+      dva: 2.4.1_ef5jwxihqo6n7gxfmzogljlgcm
       immer: 8.0.4
     dev: true
 
@@ -4179,28 +4201,27 @@ packages:
       dva-core: 2.0.4_redux@3.7.2
     dev: true
 
-  /dva/2.5.0-beta.2_ef5jwxihqo6n7gxfmzogljlgcm:
-    resolution: {integrity: sha512-kc2+CHhF1cNIU3Rg1miMhHgOKJ/VDrq9d6ynVBZf1EN2YKWU3MVFq/uTTBqMr2qkR0m9f8VKHOFmfKLtfMI93Q==}
+  /dva/2.4.1_ef5jwxihqo6n7gxfmzogljlgcm:
+    resolution: {integrity: sha512-ggj/P4lYa+7GBZuNua2Sn8rDjhbb2Mjt9THUKlunSYSBwIVU5xFIBkCB87JBPc274ojL9h/hKOmVFVFlWzlRpg==}
     peerDependencies:
       react: 15.x || ^16.0.0-0
       react-dom: 15.x || ^16.0.0-0
     dependencies:
-      '@babel/runtime': 7.23.2
+      '@babel/runtime': 7.0.0-beta.46
       '@types/isomorphic-fetch': 0.0.34
       '@types/react-router-dom': 4.3.5
       '@types/react-router-redux': 5.0.25
-      dva-core: 1.5.0-beta.2_redux@3.7.2
+      dva-core: 1.4.0_redux@3.7.2
       global: 4.4.0
       history: 4.10.1
       invariant: 2.2.4
       isomorphic-fetch: 2.2.1
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
-      react-redux: 5.1.2_react@18.1.0+redux@3.7.2
+      react-redux: 5.0.7_react@18.1.0+redux@3.7.2
       react-router-dom: 4.3.1_react@18.1.0
       react-router-redux: 5.0.0-alpha.9_react@18.1.0
       redux: 3.7.2
-    dev: true
 
   /electron-to-chromium/1.4.592:
     resolution: {integrity: sha512-D3NOkROIlF+d5ixnz7pAf3Lu/AuWpd6AYgI9O67GQXMXTcCP1gJQRotOq35eQy5Sb4hez33XH1YdTtILA7Udww==}
@@ -4230,7 +4251,6 @@ packages:
     resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
     dependencies:
       iconv-lite: 0.6.3
-    dev: true
 
   /end-of-stream/1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
@@ -4829,7 +4849,6 @@ packages:
   /flatten/1.0.3:
     resolution: {integrity: sha512-dVsPA/UwQ8+2uoFe5GHtiBMu48dWLTdsuEd7CKGlZlD78r1TTWBvDuFaFGKCo/ZfEr95Uk56vZoX86OsHkUeIg==}
     deprecated: flatten is deprecated in favor of utility frameworks such as lodash.
-    dev: true
 
   /follow-redirects/1.15.3:
     resolution: {integrity: sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==}
@@ -5025,7 +5044,6 @@ packages:
     dependencies:
       min-document: 2.19.0
       process: 0.11.10
-    dev: true
 
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -5171,7 +5189,6 @@ packages:
       tiny-invariant: 1.3.1
       tiny-warning: 1.0.3
       value-equal: 1.0.1
-    dev: true
 
   /history/5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
@@ -5188,7 +5205,6 @@ packages:
 
   /hoist-non-react-statics/2.5.5:
     resolution: {integrity: sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==}
-    dev: true
 
   /hoist-non-react-statics/3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
@@ -5595,7 +5611,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       isobject: 3.0.1
-    dev: true
 
   /is-plain-object/5.0.0:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
@@ -5623,7 +5638,6 @@ packages:
   /is-stream/1.1.0:
     resolution: {integrity: sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /is-stream/2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
@@ -5706,14 +5720,12 @@ packages:
   /isobject/3.0.1:
     resolution: {integrity: sha512-WhB9zCku7EGTj/HQQRz5aUQEUeoQZH2bWcltRErOpymJ4boYE6wL9Tbr23krRPSZ+C5zqNSrSw+Cc7sZZ4b7vg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /isomorphic-fetch/2.2.1:
     resolution: {integrity: sha512-9c4TNAKYXM5PRyVcwUZrF3W09nQ+sO7+jydgs4ZGW9dhsLG2VOlISJABombdQqQRXCwuYG3sYV/puGf5rp0qmA==}
     dependencies:
       node-fetch: 1.7.3
       whatwg-fetch: 3.6.19
-    dev: true
 
   /isomorphic-unfetch/4.0.2:
     resolution: {integrity: sha512-1Yd+CF/7al18/N2BDbsLBcp6RO3tucSW+jcLq24dqdX5MNbCNTw1z4BsGsp4zNmjr/Izm2cs/cEqZPp4kvWSCA==}
@@ -6070,18 +6082,15 @@ packages:
 
   /lodash-es/4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
-    dev: true
 
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
-    dev: true
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
 
   /lodash.throttle/4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
-    dev: true
 
   /lodash.tonumber/4.0.3:
     resolution: {integrity: sha512-SY0SwuPOHRwKcCNTdsntPYb+Zddz5mDUIVFABzRMqmAiL41pMeyoQFGxYAw5zdc9NnH4pbJqiqqp5ckfxa+zSA==}
@@ -6242,7 +6251,6 @@ packages:
     resolution: {integrity: sha512-9Wy1B3m3f66bPPmU5hdA4DR4PB2OfDU/+GS3yAB7IQozE3tqXaVv2zOjgla7MEGSRv95+ILmOuvhLkOK6wJtCQ==}
     dependencies:
       dom-walk: 0.1.2
-    dev: true
 
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
@@ -6339,7 +6347,6 @@ packages:
     dependencies:
       encoding: 0.1.13
       is-stream: 1.1.0
-    dev: true
 
   /node-fetch/3.3.2:
     resolution: {integrity: sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==}
@@ -7913,22 +7920,20 @@ packages:
     resolution: {integrity: sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==}
     dev: false
 
-  /react-redux/5.1.2_react@18.1.0+redux@3.7.2:
-    resolution: {integrity: sha512-Ns1G0XXc8hDyH/OcBHOxNgQx9ayH3SPxBnFCOidGKSle8pKihysQw2rG/PmciUQRoclhVBO8HMhiRmGXnDja9Q==}
+  /react-redux/5.0.7_react@18.1.0+redux@3.7.2:
+    resolution: {integrity: sha512-5VI8EV5hdgNgyjfmWzBbdrqUkrVRKlyTKk1sGH3jzM2M2Mhj/seQgPXaz6gVAj2lz/nz688AdTqMO18Lr24Zhg==}
     peerDependencies:
       react: ^0.14.0 || ^15.0.0-0 || ^16.0.0-0
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
     dependencies:
-      '@babel/runtime': 7.23.2
-      hoist-non-react-statics: 3.3.2
+      hoist-non-react-statics: 2.5.5
       invariant: 2.2.4
+      lodash: 4.17.21
+      lodash-es: 4.17.21
       loose-envify: 1.4.0
       prop-types: 15.8.1
       react: 18.1.0
-      react-is: 16.13.1
-      react-lifecycles-compat: 3.0.4
       redux: 3.7.2
-    dev: true
 
   /react-redux/8.1.3_yzykhwkbvzu7hbl2r3tjohdhj4:
     resolution: {integrity: sha512-n0ZrutD7DaX/j9VscF+uTALI3oUPa/pO4Z3soOBIjuRn/FzVu6aehhysxZCLi6y7duMf52WNZGMl7CtuK5EnRw==}
@@ -7981,7 +7986,6 @@ packages:
       react: 18.1.0
       react-router: 4.3.1_react@18.1.0
       warning: 4.0.3
-    dev: true
 
   /react-router-dom/6.20.0_ef5jwxihqo6n7gxfmzogljlgcm:
     resolution: {integrity: sha512-CbcKjEyiSVpA6UtCHOIYLUYn/UJfwzp55va4yEfpk7JBN3GPqWfHrdLkAvNCcpXr8QoihcDMuk0dzWZxtlB/mQ==}
@@ -8018,7 +8022,6 @@ packages:
       prop-types: 15.8.1
       react: 18.1.0
       react-router: 4.3.1_react@18.1.0
-    dev: true
 
   /react-router/4.3.1_react@18.1.0:
     resolution: {integrity: sha512-yrvL8AogDh2X42Dt9iknk4wF4V8bWREPirFfS9gLU1huk6qK41sg7Z/1S81jjTrGHxa3B8R3J6xIkDAA6CVarg==}
@@ -8033,7 +8036,6 @@ packages:
       prop-types: 15.8.1
       react: 18.1.0
       warning: 4.0.3
-    dev: true
 
   /react-router/6.20.0_react@18.1.0:
     resolution: {integrity: sha512-pVvzsSsgUxxtuNfTHC4IxjATs10UaAtvLGVSA1tbUE4GDaOSU1Esu2xF5nWLz7KPiMuW8BJWuPFdlGYJ7/rW0w==}
@@ -8127,7 +8129,6 @@ packages:
 
   /redux-saga/0.16.2:
     resolution: {integrity: sha512-iIjKnRThI5sKPEASpUvySemjzwqwI13e3qP7oLub+FycCRDysLSAOwt958niZW6LhxfmS6Qm1BzbU70w/Koc4w==}
-    dev: true
 
   /redux/3.7.2:
     resolution: {integrity: sha512-pNqnf9q1hI5HHZRBkj3bAngGZW/JMCmexDlOxw4XagXY2o1327nHH54LoTjiPJ0gizoqPDRqWyX/00g0hD6w+A==}
@@ -8136,13 +8137,11 @@ packages:
       lodash-es: 4.17.21
       loose-envify: 1.4.0
       symbol-observable: 1.2.0
-    dev: true
 
   /redux/4.2.1:
     resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
     dependencies:
       '@babel/runtime': 7.23.2
-    dev: true
 
   /reflect.getprototypeof/1.0.4:
     resolution: {integrity: sha512-ECkTw8TmJwW60lOTR+ZkODISW6RQ8+2CL3COqtiJKLd6MmB45hN51HprHFziKLGkAuTGQhBb91V8cy+KHlaCjw==}
@@ -8164,6 +8163,9 @@ packages:
 
   /regenerate/1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
+
+  /regenerator-runtime/0.11.1:
+    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
 
   /regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
@@ -8225,7 +8227,6 @@ packages:
 
   /resolve-pathname/3.0.0:
     resolution: {integrity: sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==}
-    dev: true
 
   /resolve-pkg-maps/1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
@@ -8868,7 +8869,6 @@ packages:
   /symbol-observable/1.2.0:
     resolution: {integrity: sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /synckit/0.8.5:
     resolution: {integrity: sha512-L1dapNV6vu2s/4Sputv8xGsCdAVlb5nRDMFU/E27D44l5U6cw1g0dGd45uLc+OXjNMmF4ntiMdCimzcjFKQI8Q==}
@@ -8964,11 +8964,9 @@ packages:
 
   /tiny-invariant/1.3.1:
     resolution: {integrity: sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==}
-    dev: true
 
   /tiny-warning/1.0.3:
     resolution: {integrity: sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==}
-    dev: true
 
   /tinycolor2/1.6.0:
     resolution: {integrity: sha512-XPaBkWQJdsf3pLKJV9p4qN/S+fm2Oj8AIPo1BTUhg5oxkvm9+SVEGFdhyOz7tTdUTfvxMiAs4sp6/eZO2Ew+pw==}
@@ -9114,6 +9112,13 @@ packages:
     resolution: {integrity: sha512-6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  /umi-request/1.4.0:
+    resolution: {integrity: sha512-OknwtQZddZHi0Ggi+Vr/olJ7HNMx4AzlywyK0W3NZBT7B0stjeZ9lcztA85dBgdAj3KVk8uPJPZSnGaDjELhrA==}
+    dependencies:
+      isomorphic-fetch: 2.2.1
+      qs: 6.11.2
+    dev: false
 
   /umi/4.0.88_22boosscmxmxnhhssdlfnr2gta:
     resolution: {integrity: sha512-gNgBMbLuZwj5c2uroFmtgT4tJO2JFKfIxJaad3oFa0cOzJMSx6CnaG3Z2/+pU2eAy9EMBvbtY/iAmkr3ZNEAWg==}
@@ -9285,7 +9290,6 @@ packages:
 
   /value-equal/1.0.1:
     resolution: {integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==}
-    dev: true
 
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
@@ -9338,7 +9342,6 @@ packages:
     resolution: {integrity: sha512-jMBt6pUrKn5I+OGgtQ4YZLdhIeJmObddh6CsibPxyQ5yPZm1XExSyzC1LCNX7BzhxWgiHmizBWJTHJIjMjTQYQ==}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /warning/4.0.3:
     resolution: {integrity: sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==}
@@ -9410,7 +9413,6 @@ packages:
 
   /whatwg-fetch/3.6.19:
     resolution: {integrity: sha512-d67JP4dHSbm2TrpFj8AbO8DnL1JXL5J9u0Kq2xW6d0TFDbCA3Muhdt8orXC22utleTVj7Prqt82baN6RBvnEgw==}
-    dev: true
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

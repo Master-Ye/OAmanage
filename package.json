@@ -11,11 +11,15 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@ant-design/pro-layout": "^7.17.16",
+    "@umijs/use-request": "^1.4.3",
     "antd": "^5.11.3",
     "axios": "^1.6.2",
+    "dva": "^2.4.1",
+    "qs": "^6.11.2",
     "react-router": "6",
     "react-router-dom": "^6.20.0",
-    "umi": "^4.0.88"
+    "umi": "^4.0.88",
+    "umi-request": "^1.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",

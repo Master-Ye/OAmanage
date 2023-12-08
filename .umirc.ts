@@ -5,13 +5,19 @@ export default defineConfig({
   //   { path: "/", component: "index" },
   //   { path: "/docs", component: "docs" },
   // ],
+  devtool: 'source-map',
+
   alias:{
     utils:resolve(__dirname,"./src/utils"),
     components:resolve(__dirname,"./src/components"),
-    common:resolve(__dirname,"./src/common")
+    common:resolve(__dirname,"./src/common"),
+    api:resolve(__dirname,"./src/servicer")
+  },
+  dva: {
+
   },
   npmClient: 'pnpm',
-  plugins: ['@umijs/plugins/dist/antd'],
+  plugins: ['@umijs/plugins/dist/antd','@umijs/plugins/dist/dva'],
   antd: {
     // configProvider
     configProvider: {},

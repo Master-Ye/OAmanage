@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { PhoneOutlined, CodeSandboxOutlined } from "@ant-design/icons";
 import { Button, message } from "antd";
+
 import { loginRule } from "utils/rules";
 export default function SmCodeLogin({ FormItem, Input, from }) {
   const [disabled, setDisabled] = useState(true);
